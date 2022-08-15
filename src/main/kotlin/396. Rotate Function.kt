@@ -22,6 +22,7 @@ fun maxRotateFunction(nums: IntArray): Int {
         fSum -= (n - 1) * nums[n - 1 - i]
         // sum of num - lastNum in previous rotation
         fSum += sum - nums[n - 1 - i]
+
         result = maxOf(result, fSum)
     }
 
