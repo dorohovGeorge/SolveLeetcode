@@ -13,7 +13,6 @@ fun maxRotateFunction(nums: IntArray): Int {
         sum += nums[i]
         fSum += i * nums[i]
     }
-
     var result = fSum
 
     for (i in 0 until n) {
